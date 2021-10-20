@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "devs";
+    src: local('devs'), url(./fonts/devicon.woff) format('woff');
+}
+@font-face {
+    font-family: "strasua";
+    src: local('strasua'), url(./fonts/strasua.ttf) format('truetype');
+}

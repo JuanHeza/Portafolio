@@ -1,0 +1,44 @@
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10vw;
+    margin: 5vh 5vw;
+}
+.projectCard {
+    /* height: 30vw; */
+    width: 40vw;
+    aspect-ratio: 2/1;
+    border: solid 1px #333;
+}
+.banner{
+    /* height: 66%; */
+    width: 100%;
+    aspect-ratio: 2/1
+}
+.banner img{
+    height: 100%;
+}
+.info {
+    display: flex;
+    flex-direction: row;
+    /* height: 47%; */
+    width: 100%;
+}
+.icon {
+    height: 100%;
+    width: 24%;
+    aspect-ratio: 1;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    /* width: 53.5%; */
+    height: 100%;
+}
+.text h1, .text p{
+    margin: 1vh auto;
+}
+.buttons{
+    /* width: 12.5%; */
+    height: 100%;
+}
