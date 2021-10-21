@@ -6,7 +6,7 @@
 }
 .coin {
   position: relative;
-  /* width: inherit; */
+  aspect-ratio: 1/1;
   height: inherit;
   display: flex;
   transform-style: preserve-3d;
@@ -44,7 +44,7 @@
   animation-duration: 1s;
   animation-delay: 7s;
 }
-.hexagon-container img {
+.hexagon-container .coin svg image{
   animation-name: intro1;
   animation-duration: 2s;
   animation-fill-mode: forwards;
@@ -57,25 +57,25 @@
   width: 50%;
   margin: auto;
 }
-#honey-comb-1{
+#honey-comb-1 svg image{
   animation-delay: 0s;
 }
-#honey-comb-2{
+#honey-comb-2 svg image{
   animation-delay: 1s;
 }
-#honey-comb-3{
+#honey-comb-3 svg image{
   animation-delay: 2s;
 }
-#honey-comb-5{
+#honey-comb-5 svg image{
   animation-delay: 3s;
 }
-#honey-comb-6{
+#honey-comb-6 svg image{
   animation-delay: 4s;
 }
-#honey-comb-7{
+#honey-comb-7 svg image{
   animation-delay: 5s;
 }
-#honey-comb-4{
+#honey-comb-4 svg image{
   animation-delay: 8s;
 }
 #center-hexagon {
