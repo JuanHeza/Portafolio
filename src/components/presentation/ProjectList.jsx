@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import {HexagonImage} from "./hexagon"
+import {Hexagon} from "./hexagon"
 import "./projectList.css"
 
 export class ProjectCard extends React.Component {
@@ -12,7 +12,7 @@ export class ProjectCard extends React.Component {
                 </div>
                 <div className="info">
                     <div className="icon">
-                        <HexagonImage image="logo"/>
+                        <Hexagon />
                     </div>
                     <div className="text">
                         <details>

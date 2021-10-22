@@ -1,7 +1,7 @@
-import './loading.css';
+// import './loading.css';
 import Honeycomb, {Hexagon} from "./hexagon"
 import React from 'react'
-// import { Redirect } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 
 class Loading extends React.Component {
   constructor(props){
@@ -36,7 +36,7 @@ class Loading extends React.Component {
             <div id="row-2" className="lema-row"> <span class="hexal"><Hexagon /></span > <span className="text">Design</span>  <span class="hexal"><Hexagon /></span> </div>
             <div id="row-3" className="lema-row"> <span class="hexal"><Hexagon /></span > <span className="text">Create</span>  <span class="hexal"><Hexagon /></span> </div>
           </div>
-          {/* {this.state.redirect && <Redirect to="/Home" /> } */}
+          {this.state.redirect && <Redirect to="/Home" /> }
       </div>
     );
   }

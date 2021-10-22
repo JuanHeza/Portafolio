@@ -1,12 +1,13 @@
-import React from 'react'
-import "./home.css"
+import React from 'react';
+import "./home.css";
+import {Hexagon} from "./hexagon";
 import { Link } from "react-router-dom";
 
 class Home extends React.Component {
     render(){
       return(
         <section className="home">
-          <article>
+          {/* <article>
             <img className="icon" src="./icons/logo.svg" alt=""></img>
             <h1 className="title">Projects</h1>
             <div className="block"> Bloques</div>
@@ -37,6 +38,13 @@ class Home extends React.Component {
             <Link to="/About">
               <button className="button"> Ir </button>
       			</Link> 
+          </article> */}
+          <article id="home_grid">
+            <div id="big"><Hexagon /></div>
+            <div id="small1" className="purple"><Hexagon /></div>
+            <div id="small2" className="blue"><Hexagon /></div>
+            <div id="small3" className="green"><Hexagon /></div>
+            <div id="small4" className="orange"><Hexagon /></div>
           </article>
         </section>
       )
@@ -46,10 +54,10 @@ class Home extends React.Component {
     render(){
       return(
        <header className="header">
-          <div className="main-banner">
-               {/* <img src="./img/background.jpg" alt="Banner" /> */}
-          </div>
-          <div className="nav-bar">
+          {/* <div className="main-banner">
+               <img src="./img/background.jpg" alt="Banner" />
+          </div> */}
+          <div className="nav-bar title">
             <Link to="/Home">
               <span className="name">Juan Heza</span>
             </Link>

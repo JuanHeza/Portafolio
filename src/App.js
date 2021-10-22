@@ -1,6 +1,5 @@
 // import logo from './logo.svg';
-import './App.css';
-import './animations.css';
+import './style.css';
 import './fonts.css';
 import './devicon.min.css';
 

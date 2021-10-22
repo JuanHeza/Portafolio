@@ -1,20 +1,20 @@
-import './hexagon.css';
+// import './hexagon.css';
 import React from 'react'
 
-class Hexagon extends React.Component {
+export class Hexagon extends React.Component {
   render(){
     return(
       <div className="coin" id={this.props.id}>
         <svg className="face" xmlns="http://www.w3.org/2000/svg" version="1.1" height="100%" width='100%' viewBox="0 0 300 300">
           <polygon className="border" transform="rotate(270 0 0)" transform-origin="center" points="300,150 225,280 75,280 0,150 75,20 225,20"></polygon>
           <polygon className="hex" transform="scale(0.85) rotate(270 0 0)" transform-origin="center" points="300,150 225,280 75,280 0,150 75,20 225,20"></polygon>
-          <image href={this.props.front} x="20%" y="20%" height="60%" width="60%"></image>
+          <image href={this.props.front} x="25%" y="25%" height="50%" width="50%"></image>
         </svg>
 
         <svg className="face backface" xmlns="http://www.w3.org/2000/svg" version="1.1" height="100%" width='100%' viewBox="0 0 300 300">
           <polygon className="border" transform="rotate(270 0 0)" transform-origin="center" points="300,150 225,280 75,280 0,150 75,20 225,20"></polygon>
           <polygon className="hex" transform="scale(0.85) rotate(270 0 0)" transform-origin="center" points="300,150 225,280 75,280 0,150 75,20 225,20"></polygon>
-          <image href={this.props.back} x="20%" y="20%" height="60%" width="60%"></image>
+          <image href={this.props.back} x="25%" y="25%" height="50%" width="50%"></image>
         </svg>
       </div>
     )
@@ -24,17 +24,10 @@ Hexagon.defaultProps = {
   front: "",
   back: "",
   id: "",
-  // colors: ""4
-}
-class HexagonImage extends React.Component{
-  render(){
-    return(
-        <Hexagon />
-    )
-  }
+  // colors: ""
 }
 
-class Honeycomb extends React.Component {
+export default class Honeycomb extends React.Component {
     render() {
         console.log(this.props)
 
@@ -72,5 +65,3 @@ class Honeycomb extends React.Component {
         )
     }
 }
-    export default Honeycomb
-    export {Hexagon, HexagonImage}
