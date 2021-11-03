@@ -1,7 +1,7 @@
 .coin {
   position: relative;
   aspect-ratio: 1/1;
-  height: inherit;
+  height: 100%;
   display: flex;
   transform-style: preserve-3d;
   align-items: center;
@@ -17,13 +17,7 @@
       transform: rotateY(180deg);
     }
 
-    .hex {
-      fill: #505050;
-    }
-
-    .border {
-      fill: #333;
-    }
+   @include repaintHex(darken($default,10%), darken($default,30%));
 
     image {
       position: absolute;
@@ -37,35 +31,43 @@
 }
 
 .purple {
-  .hex {
-    fill: #c3bbec;
-  }
-  .border {
-    fill: #af4bff;
+  color: lighten($purple, 10%);
+  .coin{
+    @include repaintHex(lighten($purple,30%), $purple);
+    @include dropShadow($blur: 5px, $color: $dark-color);
+    @media (prefers-color-scheme: dark){
+      @include dropShadow($blur: 10px);
+    }
   }
 }
 .blue {
-  .hex {
-    fill: #bbe4ec;
-  }
-  .border {
-    fill: #4b9bff;
+  color: lighten($blue, 10%);
+  .coin{
+    @include repaintHex(lighten($blue, 30%), $blue);
+    @include dropShadow($blur: 5px, $color: $dark-color);
+    @media (prefers-color-scheme: dark){
+      @include dropShadow($blur: 10px);
+    }
   }
 }
 .green {
-  .hex {
-    fill: #e4ecbb;
-  }
-  .border {
-    fill: #9bff4b;
+  color: lighten($green, 10%);
+  .coin{
+    @include repaintHex(lighten($green, 30%), $green);
+    @include dropShadow($blur: 5px, $color: $dark-color);
+    @media (prefers-color-scheme: dark){
+      @include dropShadow($blur: 10px);
+    } 
   }
 }
 .orange {
-  .hex {
-    fill: #ecc3bb;
-  }
-  .border {
-    fill: #ffaf4b;
+  color: lighten($red, 10%);
+  .coin{
+    @include repaintHex(lighten($red, 30%), $red);
+    @include dropShadow($blur: 5px, $color: $dark-color);
+    @media (prefers-color-scheme: dark){
+      @include dropShadow($blur: 10px);
+    }
   }
 }
 .honeycomb {

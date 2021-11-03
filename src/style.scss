@@ -1,12 +1,10 @@
 @import "variables.scss";
+@import "animations.scss";
+@import "main.scss";
+@import "mixin";
 @import "components/presentation/hexagon";
 @import "components/presentation/loading";
 @import "components/presentation/home";
-@import "animations.scss";
-
-a{
-    text-decoration: none;
-}
-.title{
-    font-family: strasua;
-}
+@import "components/presentation/header-footer";
+@import "components/presentation/project-section";
+@import "components/presentation/home-section";

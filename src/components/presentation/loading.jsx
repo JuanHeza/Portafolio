@@ -30,7 +30,7 @@ class Loading extends React.Component {
               h6:{front: "./icons/apache-original.svg"},
               h7:{front: "./icons/appcelerator-original.svg"},
           }}/>
-          {/* <img src={logo} className="App-logo" alt="logo" /> */}
+          {/* <img loading="lazy" src={logo} className="App-logo" alt="logo" /> */}
           <div className="lema">
             <div id="row-1" className="lema-row"> <span class="hexal"><Hexagon /></span > <span className="text">Idea</span>  <span class="hexal"><Hexagon /></span> </div>
             <div id="row-2" className="lema-row"> <span class="hexal"><Hexagon /></span > <span className="text">Design</span>  <span class="hexal"><Hexagon /></span> </div>

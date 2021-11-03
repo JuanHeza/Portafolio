@@ -1,108 +1,73 @@
 import React from 'react';
-import "./home.css";
+// import "./home.css";
 import {Hexagon} from "./hexagon";
-import { Link } from "react-router-dom";
+import {ProjectSection, AboutSection, SkillsSection, BlogSection} from './home-sections';
 
 class Home extends React.Component {
-    render(){
+  render(){
+      let Skills = [
+        {level: "Aprendiendo", skills: ["Angular", "Sass", "Swift", "Tailwind", "VueJS"]},
+        {level: "Basico", skills: ["Android", "C++", "C#", "Java", "MongoDB", "PHP", "Python"]},
+        {level: "Intermedio", skills: ["Arduino", "Javascript", "Jquery", "MySQL", "PostgreSQL", "Ruby", "ruby on Rails"]},
+        {level: "Avanzado", skills: ["CSS", "Go", "HTML", "React"]}
+      ];
+      let Blog = [
+        {title: "Aprendiendo CSS Grid", date: "28/10/2021", banner: "", body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque pen"},
+        {title: "Go to the future", date: "18/10/2021", banner: "", body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque pen"},
+        {title: "React-ing", date: "30/10/2021", banner: "", body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque pen"},
+        {title: "Python and pandas", date: "12/10/2012", banner: "", body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque pen"}
+      ]
+      let Projects = [
+        {icon: "", title: "Fluffy Dragon", type: "movil", status: "idea"},
+        {icon: "", title: "Artemiss", type: "multi", status: "planeacion"},
+        {icon: "", title: "Hungry Ajolote", type: "desktop", status: "desarrollo"},
+        {icon: "", title: "Watt-a-Bot", type: "software", status: "completado"},
+        {icon: "", title: "Elements", type: "hardware", status: "cancelado"},
+        {icon: "", title: "Notebook", type: "web", status: "suspendido"},
+      ]
       return(
         <section className="home">
-          {/* <article>
-            <img className="icon" src="./icons/logo.svg" alt=""></img>
-            <h1 className="title">Projects</h1>
-            <div className="block"> Bloques</div>
-            <Link to="/List/Projects">
-              <button className="button"> Ir </button>
-      			</Link> 
-          </article>
-          <article>
-            <img className="icon" src="./icons/logo.svg" alt=""></img>
-            <h1 className="title">Posts</h1>
-            <div className="block"> Bloques</div>
-            <Link to="/List/Posts">
-              <button className="button"> Ir </button>
-      			</Link> 
-          </article>
-          <article>
-            <img className="icon" src="./icons/logo.svg" alt=""></img>
-            <h1 className="title">Skills</h1>
-            <div className="block"> Bloques</div>
-            <Link to="/List/Skills">
-              <button className="button"> Ir </button>
-      			</Link> 
-          </article>
-          <article>
-            <img className="icon" src="./icons/logo.svg" alt=""></img>
-            <h1 className="title">About</h1>
-            <div className="block"> Bloques</div>
-            <Link to="/About">
-              <button className="button"> Ir </button>
-      			</Link> 
-          </article> */}
-          <article id="home_grid">
+          <section className="home_head flex row ai-center">
+            <p className="text_right">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque pen</p>
             <div id="big"><Hexagon /></div>
-            <div id="small1" className="purple"><Hexagon /></div>
-            <div id="small2" className="blue"><Hexagon /></div>
-            <div id="small3" className="green"><Hexagon /></div>
-            <div id="small4" className="orange"><Hexagon /></div>
+            <p className="text_left">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque pen</p>
+            {/* <div className="home_head_front">
+              <div className="picture">
+                <img loading="lazy" src="" alt="" />
+                <img loading="lazy" src="" alt="" />
+              </div>
+            </div> */}
+          </section>
+          <article id="home_flex">
+            <div className="home_card green">
+              <Hexagon />
+              <h2 className='title'>About</h2>
+              <p>Descripcion</p>
+            </div>
+            <div className="home_card orange">
+              <Hexagon />
+              <h2 className='title'>Skills</h2>
+              <p>Descripcion</p>
+            </div>
+            <div className="home_card purple">
+              <Hexagon />
+              <h2 className='title'>Projects</h2>
+              <p>Descripcion</p>
+            </div>
+            <div className="home_card blue">
+              <Hexagon />
+              <h2 className='title'>Blog</h2>
+              <p>Descripcion</p>
+            </div>
           </article>
+            <article id="home_sections">
+                <AboutSection />
+                <SkillsSection data={Skills}/>
+                <ProjectSection data={Projects}/>
+                <BlogSection data={Blog}/>
+            </article>
         </section>
       )
     }
   }
-  class Header extends React.Component {
-    render(){
-      return(
-       <header className="header">
-          {/* <div className="main-banner">
-               <img src="./img/background.jpg" alt="Banner" />
-          </div> */}
-          <div className="nav-bar title">
-            <Link to="/Home">
-              <span className="name">Juan Heza</span>
-            </Link>
-            <nav className="nav-bar-options">
-              <ul>
-                <Link to="/List/Projects">
-                  <li>Projects</li>
-                </Link>
-                <Link to="/List/Posts">
-                  <li>Posts</li>
-                </Link>
-                <Link to="/List/Skills">
-                  <li>Skils</li>
-                </Link>
-                <Link to="/About">
-                  <li>About</li>
-                </Link>
-                <Link to="/Contact">
-                  <li>Contact</li>
-                </Link>
-                  <li onClick={this.props.function}>Theme</li>
-              </ul>
-            </nav>
-          </div>
-       </header>
-      )
-    }
-  }
-
-  class Footer extends React.Component{
-    render(){
-      return(
-        <footer className="footer">
-          <div className="media">
-            <div><i class="devicon-github-original"></i></div>
-            <div>phone</div>
-            <div>telegram</div>
-            <div>replit</div>
-            <div>email</div>
-            <div>instagram</div>
-          </div>
-          <p> Developed By Future Star</p>
-        </footer>
-      )
-    }
-  }
 export default Home
-export {Header, Footer, Home}

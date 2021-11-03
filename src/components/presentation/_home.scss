@@ -1,24 +1,94 @@
-#home_grid {
-  display: grid;
-  grid-template-areas: "small1 . small2" ". big ." "small3 . small4";
-  grid-template-columns: 150px 300px 150px;
-  grid-template-rows: 150px 300px 150px;
-  width: 100vw;
-  height: auto;
-  #big {
-    grid-area: big;
-    transform: scale(1.5);
+.home {
+  width: auto;
+  .home_head {
+    height: 90vh;
+    padding: 5% 0;
+    position: relative;
+    background: -webkit-linear-gradient(0deg,$dark-color, $light-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    &:before{
+      content: " ";
+      background-image: url("./img/background.jpg");
+      background-color: $default;
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: -1;
+    }
+    p{
+      padding: 64px;
+      font-weight: bold;
+      font-size: 24px;
+    }
+    
+    #big {
+      height: 75%;
+      margin: auto;
+      aspect-ratio: 1/1;
+    }
+
+    .home_head_front {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      top: 50%;
+      justify-content: space-around;
+    }
   }
-  #small1 {
-    grid-area: small1;
+
+  #home_flex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    min-height: 50vh;
+
+    .home_card {
+      margin: 30px 20px 0;
+      width: 20%;
+      text-align: center;
+      border-bottom: solid 10px transparent;
+
+      .coin {
+        margin: auto;
+        height: 40%;
+      }
+
+      p {
+        width: 80%;
+        margin: auto;
+      }
+    }
   }
-  #small2 {
-    grid-area: small2;
-  }
-  #small3 {
-    grid-area: small3;
-  }
-  #small4 {
-    grid-area: small4;
+  #home_sections {
+
+    .section {
+      padding: 32px;
+      .cards {
+        gap: 2rem;
+      }
+      width: auto;
+      /* height: 400px; */
+      margin: 20px 0;
+
+      .sectionTitle, .sectionDescription {
+        text-align: center;
+        width: 100%;
+      }
+      .sectionTitle{
+        font-size: 2em;
+      }
+      .sectionDescription{
+        margin-bottom: 32px;
+        color: $dark-color;
+        @media (prefers-color-scheme: dark){
+          color: $light-color;
+        }
+      }
+    }
   }
 }

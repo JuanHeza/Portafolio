@@ -8,7 +8,7 @@ export class ProjectCard extends React.Component {
         return(
             <article className="projectCard">
                 <div className="banner">
-                    <img src="" alt="banner" />
+                    <img loading="lazy" src="" alt="banner" />
                 </div>
                 <div className="info">
                     <div className="icon">

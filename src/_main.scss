@@ -1,0 +1,157 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  background: $light-color;
+  color: $dark-color;
+  @media (prefers-color-scheme: dark) {
+    background-color: $dark-color;
+    color: $light-color;
+  }
+}
+a {
+  text-decoration: none;
+  color: unset;
+}
+.title {
+  font-family: strasua;
+  letter-spacing: 2px;
+  font-style: italic;
+}
+.flex {
+  display: flex;
+  &.wrap {
+    flex-wrap: wrap;
+  }
+  &.column {
+    flex-direction: column;
+  }
+  &.row {
+    flex-direction: row;
+  }
+  &.jc-evenly {
+    justify-content: space-evenly;
+  }
+  &.jc-center {
+    justify-content: center;
+  }
+  &.ai-center {
+    align-items: center;
+  }
+  &.ai-baseline {
+    align-items: baseline;
+  }
+}
+
+.badge {
+  border-radius: 16px;
+  border: $dark-color 2px solid;
+  color: $light-color;
+  text-transform: capitalize;
+  
+  @media (prefers-color-scheme: dark) {
+    color: $dark-color;
+    border-color: $light-color;
+  }
+  background: $default;
+  &.plataforma {
+    color: $dark-color;
+    @media (prefers-color-scheme: dark) {
+      color: $light-color;
+    }
+    &.web {
+      background: lighten($magenta, 20%);
+      @media (prefers-color-scheme: dark) {
+        background: darken($magenta, 20%);
+      }
+    }
+    &.multi {
+      background: lighten($scarlet, 20%);
+      @media (prefers-color-scheme: dark) {
+        background: darken($scarlet, 20%);
+      }
+    }
+    &.movil {
+      background: lighten($mint, 20%);
+      @media (prefers-color-scheme: dark) {
+        background: darken($mint, 20%);
+      }
+    }
+    &.hardware {
+      background: lighten($electric, 20%);
+      @media (prefers-color-scheme: dark) {
+        background: darken($electric, 20%);
+      }
+    }
+    &.desktop {
+      background: lighten($cyan, 20%);
+      @media (prefers-color-scheme: dark) {
+        background: darken($cyan, 20%);
+      }
+    }
+    &.software {
+      background: lighten($orange, 20%);
+      @media (prefers-color-scheme: dark) {
+        background: darken($orange, 20%);
+      }
+    }
+  }
+  &.estado {
+    color: $dark-color;
+    @media (prefers-color-scheme: dark) {
+      color: $light-color;
+    }
+    &.idea {
+      background: lighten($blackberry, 20%);
+      @media (prefers-color-scheme: dark) {
+        background: darken($blackberry, 20%);
+      }
+    }
+    &.planeacion {
+      background: lighten($hawkeye, 20%);
+      @media (prefers-color-scheme: dark) {
+        background: darken($hawkeye, 20%);
+      }
+    }
+    &.suspendido {
+      background: lighten($brown, 20%);
+      @media (prefers-color-scheme: dark) {
+        background: darken($brown, 20%);
+      }
+    }
+    &.desarrollo {
+      background: lighten($cobalt, 20%);
+      @media (prefers-color-scheme: dark) {
+        background: darken($cobalt, 20%);
+      }
+    }
+    &.completado {
+      background: lighten($leaf, 20%);
+      @media (prefers-color-scheme: dark) {
+        background: darken($leaf, 20%);
+      }
+    }
+    &.cancelado {
+      background: lighten($raspberry, 20%);
+      @media (prefers-color-scheme: dark) {
+        background: darken($raspberry, 20%);
+      }
+    }
+  }
+  &.link {
+    width: 80px;
+    height: 32px;
+    margin: auto;
+    text-align: center;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: $dark-color;
+    border-color: lighten($dark-color, 30%);
+    @media (prefers-color-scheme: dark) {
+      border-color: darken($light-color, 30%);
+      background-color: $light-color;
+    }
+  }
+}

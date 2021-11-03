@@ -4,15 +4,17 @@ import './fonts.css';
 import './devicon.min.css';
 
 import React, { useState } from 'react';
-import { ThemeProvider } from 'styled-components';
+// import { ThemeProvider } from 'styled-components';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import { lightTheme, darkTheme } from './components/presentation/theme';
-import { GlobalStyles } from './components/presentation/global';
+// import { lightTheme, darkTheme } from './components/presentation/theme';
+// import { GlobalStyles } from './components/presentation/global';
 
-import {Header, Footer, Home} from "./components/presentation/home"
+import {Header, Footer} from "./components/presentation/header-footer"
+import Home from "./components/presentation/home"
 import Loading from "./components/presentation/loading"
 import ProjectList from './components/presentation/ProjectList'
+import About from './components/about/about'
 
 function App() {
   
@@ -26,9 +28,9 @@ function App() {
   }
 
   return (
-    <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
-      <>
-        <GlobalStyles />
+    // <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+      // <>
+        /* <GlobalStyles /> */
         <div className="App">
           <Router>
             <section className="Main">
@@ -40,41 +42,44 @@ function App() {
                 <Route exact path="/Home">
                   <Header function={toggleTheme}/>
                   <Home />
+                  <Footer />
                 </Route>
                 
                 <Route path="/List/Projects">
                   <Header function={toggleTheme}/>
                   <ProjectList />
+                  <Footer />
                 </Route>
                 
-                <Route path="/List/Posts">
+                <Route path="/List/Blog">
                   <Header function={toggleTheme}/>
-                  Post
+                  Blog
+                  <Footer />
                 </Route>
                 
                 <Route path="/List/Skills">
                   <Header function={toggleTheme}/>
                   Skills
-
-                  ReacT
+                  <Footer />
                 </Route>
                 
                 <Route path="/About">
                   <Header function={toggleTheme}/>
-                  About
+                  <About />
+                  <Footer />
                 </Route>
                 
                 <Route path="/Contact">
                   <Header function={toggleTheme}/>
                   Contact
+                  <Footer />
                 </Route>
               </Switch>
-              <Footer />
             </section>
           </Router>
         </div>
-      </>
-    </ThemeProvider>
+      // </>
+    // </ThemeProvider>
   );
 }
 

@@ -8,13 +8,13 @@ export class Hexagon extends React.Component {
         <svg className="face" xmlns="http://www.w3.org/2000/svg" version="1.1" height="100%" width='100%' viewBox="0 0 300 300">
           <polygon className="border" transform="rotate(270 0 0)" transform-origin="center" points="300,150 225,280 75,280 0,150 75,20 225,20"></polygon>
           <polygon className="hex" transform="scale(0.85) rotate(270 0 0)" transform-origin="center" points="300,150 225,280 75,280 0,150 75,20 225,20"></polygon>
-          <image href={this.props.front} x="25%" y="25%" height="50%" width="50%"></image>
+          <image loading="lazy" href={this.props.front} x="25%" y="25%" height="50%" width="50%"></image>
         </svg>
 
         <svg className="face backface" xmlns="http://www.w3.org/2000/svg" version="1.1" height="100%" width='100%' viewBox="0 0 300 300">
           <polygon className="border" transform="rotate(270 0 0)" transform-origin="center" points="300,150 225,280 75,280 0,150 75,20 225,20"></polygon>
           <polygon className="hex" transform="scale(0.85) rotate(270 0 0)" transform-origin="center" points="300,150 225,280 75,280 0,150 75,20 225,20"></polygon>
-          <image href={this.props.back} x="25%" y="25%" height="50%" width="50%"></image>
+          <image loading="lazy" href={this.props.back} x="25%" y="25%" height="50%" width="50%"></image>
         </svg>
       </div>
     )

@@ -1,0 +1,33 @@
+@mixin dropShadow($x: 0, $y: 0, $blur: 5px, $color: currentColor) {
+    filter: drop-shadow($x $y $blur $color);
+    @media(prefers-color-scheme: dark){
+      animation: 4s shadow infinite;
+    }
+}
+@mixin boxShadow($x: 0, $y: 0, $blur: 5px, $inset: false, $double: false, $color: currentColor, $bg: true ){
+  border-radius: 16px;
+  @media (prefers-color-scheme: light) {
+    @if $bg{background-color: lighten($color, 45%);}
+    box-shadow: $x $y $blur $dark-color;
+  }
+  @media (prefers-color-scheme: dark) {
+    @if $bg{background-color: darken($color, 45%);}
+    @if $double{
+      box-shadow: $x $y $blur+5 $color, inset $x $y $blur+5 $color;
+    }@else{
+      @if $inset {
+        box-shadow: inset $x $y $blur+5 $color;
+      }@else{
+        box-shadow: $x $y $blur+5 $color;
+      }
+    }
+  }
+}
+@mixin repaintHex($hex, $border){
+  .hex {
+      fill: $hex;
+  }
+  .border {
+    fill: $border;
+  }
+}

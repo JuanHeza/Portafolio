@@ -1,0 +1,27 @@
+.projects {
+  .icon {
+    width: 96px;
+    height: 96px;
+    background: $dark-color;
+    border-radius: 50%;
+  }
+  .title {
+    font-size: 40px;
+    margin: 16px 0;
+  }
+  .block {
+    height: 100px;
+  }
+  .button {
+    height: 32px;
+    width: 100px;
+    border-radius: 25px 0 25px 0;
+    // background-color:${({ theme }) => theme.enfasis};
+    color: $light-color;
+    border: solid 2px $light-color;
+    &:active,
+    &:hover {
+      // filter: drop-shadow(2px 4px 10px ${({ theme }) => theme.enfasis});
+    }
+  }
+}
