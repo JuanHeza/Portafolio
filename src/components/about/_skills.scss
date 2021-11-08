@@ -1,0 +1,13 @@
+#skills{
+    .card{
+        padding: 8px 16px;
+    }
+    .level{
+        width: 100%;
+        .column{
+            width: 20%;
+            .coin { width: 30%; }
+            .name { width: 50%; text-transform: capitalize; margin: 0;}
+        }
+    }
+}

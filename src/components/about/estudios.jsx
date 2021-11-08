@@ -7,8 +7,8 @@ export default class Estudios extends React.Component{
                 <h3>Estudios</h3>
                 <div className="jobCard">
                     <img ClassName="icon" src="" alt="" />
-                    <h4 className="course"><b></b></h4>
-                    <h4 className="place"></h4>
+                    <h4 className="course"><b>.</b></h4>
+                    <h4 className="place">.</h4>
                 </div>
             </section>
         )

@@ -1,0 +1,27 @@
+.skillRow{
+    margin: 32px 8px;
+    .coin{
+        @include repaintHex($red, $red)
+    }
+    .skillTitle{
+        height: 64px;
+        width: 100%;
+        .title{
+            width: 90%;
+        }
+    }
+    .skillProjects, .skillBlogs{
+        button{
+            width: 5%;
+            background: transparent;
+            border: solid 2px #ffffff88;
+            color:#fff
+            
+        }
+        .projectSection, .blogSection{
+            width: 90%;
+            gap: 64px;
+            overflow-x: auto;
+        }
+    }
+}

@@ -6,15 +6,15 @@ import './devicon.min.css';
 import React, { useState } from 'react';
 // import { ThemeProvider } from 'styled-components';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
 // import { lightTheme, darkTheme } from './components/presentation/theme';
 // import { GlobalStyles } from './components/presentation/global';
 
 import {Header, Footer} from "./components/presentation/header-footer"
 import Home from "./components/presentation/home"
 import Loading from "./components/presentation/loading"
-import ProjectList from './components/presentation/ProjectList'
+// import ProjectList from './components/presentation/ProjectList'
 import About from './components/about/about'
+import List from "./components/lists/list"
 
 function App() {
   
@@ -45,7 +45,7 @@ function App() {
                   <Footer />
                 </Route>
                 
-                <Route path="/List/Projects">
+                {/* <Route path="/List/Projects">
                   <Header function={toggleTheme}/>
                   <ProjectList />
                   <Footer />
@@ -55,11 +55,11 @@ function App() {
                   <Header function={toggleTheme}/>
                   Blog
                   <Footer />
-                </Route>
+                </Route> */}
                 
-                <Route path="/List/Skills">
+                <Route path="/List/:type">
                   <Header function={toggleTheme}/>
-                  Skills
+                    <List />
                   <Footer />
                 </Route>
                 

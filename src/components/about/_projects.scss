@@ -1,0 +1,36 @@
+#projects{
+    .card{
+        width: 45%;
+        margin: 32px auto;
+        .name{ width: 55%;}
+        .status{ 
+            width: 45%;
+            padding: 8px;
+            text-transform: capitalize;
+            &.idea{ background-color: #ffffff88;}
+            &.planeacion{ background-color: #ffffff88;}
+            &.desarrollo{ background-color: #ffffff88;}
+            &.completado{ background-color: #ffffff88;}
+            &.suspendido{ background-color: #ffffff88;}
+            &.cancelado{ background-color: #ffffff88;}
+        }
+        .body{
+            padding-left: 32px;
+            width: 100%;
+            border-left: solid 3px $dark-color;
+            @media (prefers-collor-scheme:dark){
+                border-color: $light-color;
+            }
+        }
+        .skillList{
+            width: 90%;
+            margin: auto;
+            text-transform: capitalize;
+            .skill{
+                width: 128px;
+                height: 16px;
+                text-align: center;
+            }
+        }
+    }
+}

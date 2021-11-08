@@ -50,7 +50,7 @@
     }
   }
 }
-.green {
+.green, #about {
   color: lighten($green, 10%);
   .coin{
     @include repaintHex(lighten($green, 30%), $green);

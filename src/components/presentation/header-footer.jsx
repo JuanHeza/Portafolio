@@ -22,13 +22,13 @@ class Header extends React.Component {
                   <Link to="/List/Blog">Blog</Link>
                 </li>
                 <li>
-                  <Link to="/List/Skills">Skils</Link>
+                  <Link to="/List/Skills">Skills</Link>
                 </li>
                 <li>
                   <Link to="/About">About</Link>
                 </li>
                 <li>
-                  <Link to="/Contact">Contact</Link>
+                  {/* <Link to="/Contact">Contact</Link> */}
                 </li>
                   {/* <li onClick={this.props.function}>Theme</li> */}
               </ul>

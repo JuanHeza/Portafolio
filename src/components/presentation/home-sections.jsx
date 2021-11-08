@@ -1,7 +1,7 @@
 import React from 'react'
 import {Hexagon} from "./hexagon";
-import {ProjectCard} from "./project-card";
-import {BlogCard} from "./blog-card";
+import ProjectCard from "./project-card";
+import BlogCard from "./blog-card";
 import {SkillColumn} from "./skill-column";
 import { Link } from "react-router-dom";
 

@@ -1,0 +1,28 @@
+#about{
+    color: $dark-color;
+    @media (prefers-color-scheme: dark){
+        color: $light-color;
+    }
+    @media print{
+        background-color: $light-color;
+        color: $dark-color;
+        .coin{
+            .face{
+                .hex, .border{
+                    fill: red;
+                }
+            }
+        }
+    }
+    .card{
+        margin: 16px;
+        padding: 16px;
+        border-radius: 8px;
+        background: opacify(darken($default, 10%),0.5);
+        border: 4px solid darken($default, 30%);
+    }
+    .heading{
+        width: 100%;
+        text-align: center;
+    }
+}

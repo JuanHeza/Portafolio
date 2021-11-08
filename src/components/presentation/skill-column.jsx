@@ -1,6 +1,6 @@
 import React from 'react';
 import {Hexagon} from "./hexagon";
-
+import {devicon} from "../../devicon"
 export class SkillColumn extends React.Component{
     render(){
         return(
@@ -8,12 +8,8 @@ export class SkillColumn extends React.Component{
                 <h4 className="title">{this.props.level}</h4>
                 <div className="skills flex row wrap">
                     {this.props.skills.map((skill) => (
-                        <Hexagon />
+                        <Hexagon front={devicon[skill.toLowerCase()]}/>
                     ))}
-                    {/* <Hexagon />
-                    <Hexagon />
-                    <Hexagon />
-                    <Hexagon /> */}
                 </div>
             </article>
         )

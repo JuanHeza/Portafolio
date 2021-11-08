@@ -19,6 +19,13 @@ a {
   font-family: strasua;
   letter-spacing: 2px;
   font-style: italic;
+  text-align: center;
+}
+.ta-center{
+  text-align: center;
+}
+.ta-justify{
+  text-align: justify;
 }
 .flex {
   display: flex;
@@ -33,6 +40,9 @@ a {
   }
   &.jc-evenly {
     justify-content: space-evenly;
+  }
+  &.jc-between {
+    justify-content: space-between;
   }
   &.jc-center {
     justify-content: center;

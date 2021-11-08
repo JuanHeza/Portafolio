@@ -58,7 +58,14 @@ a {
 .title {
   font-family: strasua;
   letter-spacing: 2px;
-  font-style: italic; }
+  font-style: italic;
+  text-align: center; }
+
+.ta-center {
+  text-align: center; }
+
+.ta-justify {
+  text-align: justify; }
 
 .flex {
   display: flex; }
@@ -70,6 +77,8 @@ a {
     flex-direction: row; }
   .flex.jc-evenly {
     justify-content: space-evenly; }
+  .flex.jc-between {
+    justify-content: space-between; }
   .flex.jc-center {
     justify-content: center; }
   .flex.ai-center {
@@ -234,22 +243,22 @@ a {
     .blue .coin {
       animation: 4s shadow infinite; } }
 
-.green {
+.green, #about {
   color: #69d260; }
-  .green .coin {
+  .green .coin, #about .coin {
     filter: drop-shadow(0 0 5px #1a1a1a); }
-    .green .coin .hex {
+    .green .coin .hex, #about .coin .hex {
       fill: #b4e9af; }
-    .green .coin .border {
+    .green .coin .border, #about .coin .border {
       fill: #44c738; }
     @media (prefers-color-scheme: dark) {
-      .green .coin {
+      .green .coin, #about .coin {
         animation: 4s shadow infinite; } }
     @media (prefers-color-scheme: dark) {
-      .green .coin {
+      .green .coin, #about .coin {
         filter: drop-shadow(0 0 10px currentColor); } }
   @media (prefers-color-scheme: dark) and (prefers-color-scheme: dark) {
-    .green .coin {
+    .green .coin, #about .coin {
       animation: 4s shadow infinite; } }
 
 .orange {
@@ -682,5 +691,132 @@ a {
           margin-top: 80px;
           margin-left: -48px;
           margin-bottom: -16px; }
+
+#about {
+  color: #1a1a1a; }
+  @media (prefers-color-scheme: dark) {
+    #about {
+      color: #e6e6e6; } }
+  @media print {
+    #about {
+      background-color: #e6e6e6;
+      color: #1a1a1a; }
+      #about .coin .face .hex, #about .coin .face .border {
+        fill: red; } }
+  #about .card {
+    margin: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    background: #666666;
+    border: 4px solid #333333; }
+  #about .heading {
+    width: 100%;
+    text-align: center; }
+
+#experiencia .card {
+  width: 400px;
+  height: 150px; }
+  #experiencia .card .info {
+    text-align: center; }
+    #experiencia .card .info .job, #experiencia .card .info .place, #experiencia .card .info .period {
+      margin: 8px; }
+    #experiencia .card .info .job {
+      font-weight: 600; }
+    #experiencia .card .info .place {
+      font-weight: 400; }
+    #experiencia .card .info .period {
+      font-weight: 500;
+      font-style: italic; }
+
+#intro {
+  padding: 32px 64px;
+  min-height: 500px; }
+  #intro .identity {
+    width: 35%;
+    aspect-ratio: 1/1; }
+    #intro .identity .coin {
+      height: 80%; }
+  #intro .body {
+    width: 60%;
+    text-align: justify; }
+
+#skills .card {
+  padding: 8px 16px; }
+#skills .level {
+  width: 100%; }
+  #skills .level .column {
+    width: 20%; }
+    #skills .level .column .coin {
+      width: 30%; }
+    #skills .level .column .name {
+      width: 50%;
+      text-transform: capitalize;
+      margin: 0; }
+
+#projects .card {
+  width: 45%;
+  margin: 32px auto; }
+  #projects .card .name {
+    width: 55%; }
+  #projects .card .status {
+    width: 45%;
+    padding: 8px;
+    text-transform: capitalize; }
+    #projects .card .status.idea {
+      background-color: #ffffff88; }
+    #projects .card .status.planeacion {
+      background-color: #ffffff88; }
+    #projects .card .status.desarrollo {
+      background-color: #ffffff88; }
+    #projects .card .status.completado {
+      background-color: #ffffff88; }
+    #projects .card .status.suspendido {
+      background-color: #ffffff88; }
+    #projects .card .status.cancelado {
+      background-color: #ffffff88; }
+  #projects .card .body {
+    padding-left: 32px;
+    width: 100%;
+    border-left: solid 3px #1a1a1a; }
+    @media (prefers-collor-scheme: dark) {
+      #projects .card .body {
+        border-color: #e6e6e6; } }
+  #projects .card .skillList {
+    width: 90%;
+    margin: auto;
+    text-transform: capitalize; }
+    #projects .card .skillList .skill {
+      width: 128px;
+      height: 16px;
+      text-align: center; }
+
+#links {
+  width: 100%; }
+  #links .card {
+    width: 128px;
+    height: 64px; }
+    #links .card .link .print {
+      display: none; }
+
+.skillRow {
+  margin: 32px 8px; }
+  .skillRow .coin .hex {
+    fill: red; }
+  .skillRow .coin .border {
+    fill: red; }
+  .skillRow .skillTitle {
+    height: 64px;
+    width: 100%; }
+    .skillRow .skillTitle .title {
+      width: 90%; }
+  .skillRow .skillProjects button, .skillRow .skillBlogs button {
+    width: 5%;
+    background: transparent;
+    border: solid 2px #ffffff88;
+    color: #fff; }
+  .skillRow .skillProjects .projectSection, .skillRow .skillProjects .blogSection, .skillRow .skillBlogs .projectSection, .skillRow .skillBlogs .blogSection {
+    width: 90%;
+    gap: 64px;
+    overflow-x: auto; }
 
 /*# sourceMappingURL=style.css.map */

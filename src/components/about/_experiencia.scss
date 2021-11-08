@@ -1,0 +1,13 @@
+#experiencia{
+    .card{
+        width: 400px;
+        height: 150px;
+        .info {
+            .job, .place, .period{margin: 8px;}
+            text-align: center;
+            .job{ font-weight: 600; }
+            .place{ font-weight: 400; }
+            .period{ font-weight: 500; font-style: italic; }
+        }
+    }
+}
