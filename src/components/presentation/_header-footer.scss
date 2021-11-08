@@ -17,10 +17,10 @@
     font-size: 25px;
 
     background: $light-color;
-    background: linear-gradient(90deg, $dark-color 15%, $light-color 29%);
+    background: linear-gradient(90deg, $dark-color 20%, darken($light-color,5%) 40%);
     @media (prefers-color-scheme: dark) {
       background: $dark-color;
-      background: linear-gradient(90deg, $light-color 15%, $dark-color 29%);
+      background: linear-gradient(90deg, $light-color 20%, lighten($dark-color,5%) 40%);
     }
 
     .name {

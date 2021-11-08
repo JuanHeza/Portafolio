@@ -26,7 +26,7 @@ export default class ProjectCard extends React.Component {
             {this.props.status}
           </span>
         </div>
-        <Link to="Project/Demo">
+        <Link to="/Project/00/Demo">
           <div className="link badge jc-center ai-center flex "> Ir </div>
         </Link>
       </article>

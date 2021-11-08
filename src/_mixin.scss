@@ -4,8 +4,8 @@
       animation: 4s shadow infinite;
     }
 }
-@mixin boxShadow($x: 0, $y: 0, $blur: 5px, $inset: false, $double: false, $color: currentColor, $bg: true ){
-  border-radius: 16px;
+@mixin boxShadow($x: 0, $y: 0, $blur: 5px, $inset: false, $double: false, $color: currentColor, $bg: true, $border: 16px){
+  border-radius: $border;
   @media (prefers-color-scheme: light) {
     @if $bg{background-color: lighten($color, 45%);}
     box-shadow: $x $y $blur $dark-color;
@@ -23,11 +23,26 @@
     }
   }
 }
-@mixin repaintHex($hex, $border){
+@mixin repaintHex($color){
   .hex {
-      fill: $hex;
+      fill: lighten($color, 30%);
   }
   .border {
-    fill: $border;
+    fill: $color;
+  }
+}
+@mixin phone{
+  @media (max-width:760px) {
+    @content
+  }
+}
+@mixin tablet{
+  @media (max-width:920px) {
+    @content
+  }
+}
+@mixin dark{
+  @media (prefers-color-scheme: dark){
+    @content  
   }
 }

@@ -487,11 +487,11 @@ a {
     justify-content: space-around;
     font-size: 25px;
     background: #e6e6e6;
-    background: linear-gradient(90deg, #1a1a1a 15%, #e6e6e6 29%); }
+    background: linear-gradient(90deg, #1a1a1a 20%, #d9d9d9 40%); }
     @media (prefers-color-scheme: dark) {
       .header .nav-bar {
         background: #1a1a1a;
-        background: linear-gradient(90deg, #e6e6e6 15%, #1a1a1a 29%); } }
+        background: linear-gradient(90deg, #e6e6e6 20%, #262626 40%); } }
     .header .nav-bar .name {
       color: #e6e6e6; }
       @media (prefers-color-scheme: dark) {
@@ -573,11 +573,12 @@ a {
       background-color: #000b1a;
       box-shadow: 0 0 10px #0073ff, inset 0 0 10px #0073ff; } }
   .blogSection article .banner {
-    border-radius: 16px;
+    border-radius: 8px;
     color: #1a1a1a;
     background-color: gray;
-    height: 192px;
-    width: 416px; }
+    height: 160px;
+    width: 384px;
+    margin: 16px; }
     @media (prefers-color-scheme: light) {
       .blogSection article .banner {
         box-shadow: 0 0 5px #1a1a1a; } }
@@ -607,9 +608,9 @@ a {
   .blogSection article .body {
     color: #1a1a1a;
     text-align: justify;
-    width: 400px;
+    width: 384px;
     height: 64px;
-    margin: 0; }
+    margin: 0 8px; }
     @media (prefers-color-scheme: dark) {
       .blogSection article .body {
         color: #e6e6e6; } }
@@ -798,25 +799,52 @@ a {
     #links .card .link .print {
       display: none; }
 
-.skillRow {
-  margin: 32px 8px; }
-  .skillRow .coin .hex {
+.list .skillTitle {
+  height: 32px;
+  width: 100%; }
+  .list .skillTitle .title {
+    width: 90%; }
+.list .content {
+  gap: 64px;
+  padding: 32px; }
+.list .skillRow {
+  margin: 32px 8px 64px; }
+  .list .skillRow .coin .hex {
+    fill: #ff9999; }
+  .list .skillRow .coin .border {
     fill: red; }
-  .skillRow .coin .border {
-    fill: red; }
-  .skillRow .skillTitle {
-    height: 64px;
-    width: 100%; }
-    .skillRow .skillTitle .title {
-      width: 90%; }
-  .skillRow .skillProjects button, .skillRow .skillBlogs button {
+  .list .skillRow .skillProjects button, .list .skillRow .skillBlogs button {
     width: 5%;
     background: transparent;
     border: solid 2px #ffffff88;
     color: #fff; }
-  .skillRow .skillProjects .projectSection, .skillRow .skillProjects .blogSection, .skillRow .skillBlogs .projectSection, .skillRow .skillBlogs .blogSection {
+  .list .skillRow .skillProjects .projectSection, .list .skillRow .skillProjects .blogSection, .list .skillRow .skillBlogs .projectSection, .list .skillRow .skillBlogs .blogSection {
     width: 90%;
     gap: 64px;
-    overflow-x: auto; }
+    overflow: auto;
+    -ms-overflow-style: none;
+    -scrollbar-width: none; }
+    .list .skillRow .skillProjects .projectSection::-webkit-scrollbar, .list .skillRow .skillProjects .blogSection::-webkit-scrollbar, .list .skillRow .skillBlogs .projectSection::-webkit-scrollbar, .list .skillRow .skillBlogs .blogSection::-webkit-scrollbar {
+      display: none; }
+.list .head {
+  margin: 32px;
+  height: 128px;
+  padding-bottom: 32px;
+  border-bottom: solid 2px #1a1a1a; }
+  @media (prefers-color-scheme: dark) {
+    .list .head {
+      border-color: #e6e6e6; } }
+  .list .head .coin .hex {
+    fill: #ff9999; }
+  .list .head .coin .border {
+    fill: red; }
+  .list .head .text {
+    width: 90%; }
+    .list .head .text .title {
+      height: 32px;
+      margin: 0; }
+    .list .head .text .intro {
+      text-align: justify;
+      margin: 8px; }
 
 /*# sourceMappingURL=style.css.map */

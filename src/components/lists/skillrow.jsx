@@ -11,7 +11,7 @@ export default class SkillRow extends React.Component{
             <section>
                 {this.props.data.map((item) => (
                 <div className="skillRow">
-                    <div className="flex row ai-center skillTitle">
+                    <div className="flex row ai-center jc-between head">
                         <Hexagon front={devicon[item.skill.toLowerCase()]}/>
                         <h2 className="title">{item.skill}</h2>
                         <Link to={"./Skill/"+item.skill}> {'>>'} </Link>

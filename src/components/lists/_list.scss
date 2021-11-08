@@ -1,27 +1,61 @@
-.skillRow{
-    margin: 32px 8px;
-    .coin{
-        @include repaintHex($red, $red)
-    }
+.list {
     .skillTitle{
-        height: 64px;
+        height: 32px;
         width: 100%;
         .title{
             width: 90%;
         }
     }
-    .skillProjects, .skillBlogs{
-        button{
-            width: 5%;
-            background: transparent;
-            border: solid 2px #ffffff88;
-            color:#fff
-            
+    .content{
+        gap: 64px;
+        padding: 32px;
+    }
+    .skillRow{
+        margin: 32px 8px 64px;
+        .coin{
+            @include repaintHex($red)
         }
-        .projectSection, .blogSection{
-            width: 90%;
-            gap: 64px;
-            overflow-x: auto;
+        .skillProjects, .skillBlogs{
+            button{
+                width: 5%;
+                background: transparent;
+                border: solid 2px #ffffff88;
+                color:#fff
+                
+            }
+            .projectSection, .blogSection{
+                width: 90%;
+                gap: 64px;
+                overflow: auto;
+                -ms-overflow-style: none;
+                -scrollbar-width: none;
+                &::-webkit-scrollbar{
+                    display: none;
+                }
+            }
         }
     }
+        .head{
+            margin: 32px;
+            height: 128px;
+            padding-bottom: 32px ;
+            border-bottom: solid 2px $dark-color;
+            @include dark{
+                border-color: $light-color;
+            }
+            .coin{
+                @include repaintHex($red)
+            }
+            .text{
+                width: 90%;
+                .title{
+                    height: 32px;
+                    margin: 0;
+                }
+                .intro{
+                    text-align: justify;
+                    margin: 8px;
+                }
+            }
+        }
 }

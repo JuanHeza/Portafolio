@@ -44,7 +44,7 @@ export let devicon = {
     "python":       "devicon/python-original.svg",
     "ruby on rails":"devicon/rails-original-wordmark.svg",
     "raspberry pi": "devicon/raspberrypi-original.svg",
-    "react":        "devicon/react-original.svg",
+    "react":        "/devicon/react-original.svg",
     "redux":        "devicon/redux-original.svg",
     "ruby":         "devicon/ruby-original.svg",
     "sass":         "devicon/sass-original.svg",

@@ -31,7 +31,7 @@
     @include boxShadow($color: $blue, $double: true);
 
     .banner {
-      @include boxShadow($color: $blue, $bg: false);
+      @include boxShadow($color: $blue, $bg: false, $border: 8px);
       // @include dropShadow($blur: 5px, $color: $dark-color);
       color: $dark-color;
       @media (prefers-color-scheme: dark) {
@@ -39,8 +39,9 @@
         // @include dropShadow($blur: 10px, $color: $blue);
       }
       background-color: $default;
-      height: 192px;
-      width: 416px;
+      height: 160px;
+      width: 384px;
+      margin: 16px;
     }
     .info {
       width: 416px;
@@ -68,9 +69,9 @@
         color: $light-color;
       }
       text-align: justify;
-      width: 400px;
+      width: 384px;
       height: 64px;
-      margin: 0;
+      margin: 0 8px;
     }
     .link {
       margin: 8px auto;

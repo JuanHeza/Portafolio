@@ -12,7 +12,7 @@ export default class BlogCard extends React.Component {
             <sub className="date">{this.props.date}</sub>
             <p className="body">{this.props.body}</p>
         </div>
-            <Link to="Blog/Demo"> <div  className="link badge jc-center ai-center flex ">Ir</div> </Link>
+            <Link to="/Blog/00/Demo"> <div  className="link badge jc-center ai-center flex ">Ir</div> </Link>
       </article>
     );
   }

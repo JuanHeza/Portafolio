@@ -45,24 +45,12 @@ function App() {
                   <Footer />
                 </Route>
                 
-                {/* <Route path="/List/Projects">
-                  <Header function={toggleTheme}/>
-                  <ProjectList />
-                  <Footer />
-                </Route>
-                
-                <Route path="/List/Blog">
-                  <Header function={toggleTheme}/>
-                  Blog
-                  <Footer />
-                </Route> */}
-                
                 <Route path="/List/:type/:skill">
                   <Header function={toggleTheme}/>
                     <List />
                   <Footer />
                 </Route>
-                
+
                 <Route path="/List/:type">
                   <Header function={toggleTheme}/>
                     <List />
@@ -78,6 +66,16 @@ function App() {
                 <Route path="/Contact">
                   <Header function={toggleTheme}/>
                   Contact
+                  <Footer />
+                </Route>
+                <Route path="/Blog/:id/:Name">
+                  <Header function={toggleTheme}/>
+                  Blog
+                  <Footer />
+                </Route>
+                <Route path="/Project/:id/:Name">
+                  <Header function={toggleTheme}/>
+                  Project
                   <Footer />
                 </Route>
               </Switch>
