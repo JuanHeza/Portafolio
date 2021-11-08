@@ -19,6 +19,7 @@ class Lists extends React.Component{
                 {this.props.match.params.type === "Skills" && <SkillRow /> }
                 {this.props.match.params.type === "Blog" && this.props.match.params.type}
                 {this.props.match.params.type === "Projects" && this.props.match.params.type}
+                {this.props.match.params.Skill !== null && this.props.match.params.skill}
             </section>
         )
     }

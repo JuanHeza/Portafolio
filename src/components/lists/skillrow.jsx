@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import ProjectCard from "../presentation/project-card"
 import BlogCard from "../presentation/blog-card"
 import {Hexagon} from "../presentation/hexagon"
@@ -13,7 +14,7 @@ export default class SkillRow extends React.Component{
                     <div className="flex row ai-center skillTitle">
                         <Hexagon front={devicon[item.skill.toLowerCase()]}/>
                         <h2 className="title">{item.skill}</h2>
-                        <span> {'>>'} </span>
+                        <Link to={"./Skill/"+item.skill}> {'>>'} </Link>
                     </div>
                     <div className="skillProjects flex row wrap"> 
                         <h3 className="skillTitle">Projects</h3>

@@ -57,6 +57,12 @@ function App() {
                   <Footer />
                 </Route> */}
                 
+                <Route path="/List/:type/:skill">
+                  <Header function={toggleTheme}/>
+                    <List />
+                  <Footer />
+                </Route>
+                
                 <Route path="/List/:type">
                   <Header function={toggleTheme}/>
                     <List />
