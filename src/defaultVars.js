@@ -8,10 +8,10 @@ export let projects = [
   ]
 
 export let blogs = [
-    {title: "Aprendiendo CSS Grid", date: "28/10/2021", banner: "./icons/background.jpg", body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque pen"},
-    {title: "Go to the future", date: "18/10/2021", banner: "./icons/background.jpg", body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque pen"},
-    {title: "React-ing", date: "30/10/2021", banner: "./icons/background.jpg", body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque pen"},
-    {title: "Python and pandas", date: "12/10/2012", banner: "./icons/background.jpg", body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque pen"}
+    {title: "Aprendiendo CSS Grid", date: "28/10/2021", banner: "/icons/background.jpg", body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque pen"},
+    {title: "Go to the future", date: "18/10/2021", banner: "/icons/background.jpg", body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque pen"},
+    {title: "React-ing", date: "30/10/2021", banner: "/icons/background.jpg", body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque pen"},
+    {title: "Python and pandas", date: "12/10/2012", banner: "/icons/background.jpg", body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque pen"}
   ]
 
   export let levels = [
