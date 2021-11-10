@@ -30,8 +30,7 @@ export class AboutSection extends React.Component{
                 <h4 className="sectionTitle title">About</h4>
                 <div className="content flex row jc-evenly wrap">
                     <p className="description">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque pen
-
+                        Este texto lo terminare poniendo como un mensaje secreto pero se acerca la fecha en la que quiero tener esto en demo ya funcionando asi que estara aqui. La verdad es que quiero agradecer a todos aquiellos que me han apoyado dandome consejos o simplemente escuchandome hablar incansablemente sobre mis proyectos aun cuando no tienen idea de lo que les estoy diciendo. Citlali, Erika, Arali, Guadalupe, Alejandra & Jezzania son quienes mas me han escuchado hablar y las quiero muchisimo por eso.
                     </p>
                     <div className="links flex jc-center ai-center">
                         <Hexagon />
