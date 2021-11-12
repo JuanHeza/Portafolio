@@ -8,6 +8,10 @@
             width: 20%;
             .coin { width: 30%; }
             .name { width: 50%; text-transform: capitalize; margin: 0;}
+            @include tablet{ 
+                width: 47%;
+                .name{ width: 65%;}
+            }
         }
     }
 }

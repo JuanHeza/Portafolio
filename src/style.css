@@ -802,6 +802,15 @@ a {
   #intro .body {
     width: 60%;
     text-align: justify; }
+  @media (max-width: 920px) {
+    #intro {
+      padding: 32px; }
+      #intro .identity {
+        width: 100%; }
+        #intro .identity .coin {
+          height: 40%; }
+      #intro .body {
+        width: 100%; } }
 
 #skills .card {
   padding: 8px 16px; }
@@ -815,10 +824,18 @@ a {
       width: 50%;
       text-transform: capitalize;
       margin: 0; }
+    @media (max-width: 920px) {
+      #skills .level .column {
+        width: 47%; }
+        #skills .level .column .name {
+          width: 65%; } }
 
 #projects .card {
   width: 45%;
   margin: 32px auto; }
+  @media (max-width: 920px) {
+    #projects .card {
+      width: 90%; } }
   #projects .card .name {
     width: 55%; }
   #projects .card .status {
@@ -858,6 +875,10 @@ a {
   #links .card {
     width: 128px;
     height: 64px; }
+    @media (max-width: 920px) {
+      #links .card {
+        width: 80px;
+        font-size: 0.5em; } }
     #links .card .link .print {
       display: none; }
 

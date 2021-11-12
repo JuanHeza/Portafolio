@@ -3,6 +3,10 @@
     .card{
             width: 128px;
             height: 64px;
+            @include tablet{
+                width: 80px;
+                font-size: 0.5em;
+            }
         .link{
             .print{
                 display: none;

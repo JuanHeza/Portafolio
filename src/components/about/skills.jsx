@@ -6,7 +6,7 @@ export default class Skills extends React.Component{
         return(
             <section id="skills">
                 <h3 className="heading">Skills</h3>
-                <div className="level flex row jc-evenly">
+                <div className="level flex row jc-evenly wrap">
                     {this.props.list.map((item) => (
                     <div className="flex column">
                         <h4 className="title">{item.level}</h4>

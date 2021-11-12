@@ -2,6 +2,7 @@
     .card{
         width: 45%;
         margin: 32px auto;
+        @include tablet{ width: 90%;}
         .name{ width: 55%;}
         .status{ 
             width: 45%;
