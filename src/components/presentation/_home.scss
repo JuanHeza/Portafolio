@@ -38,6 +38,20 @@
       top: 50%;
       justify-content: space-around;
     }
+    @include tablet{
+      display: grid;
+      grid-template-areas: "hexagon" "left" "right";
+      grid-template-rows: 50% auto;
+      #big{
+        grid-area: hexagon;
+      }
+      .text_left{
+        grid-area: left;
+      }
+      .text_right{
+        grid-area: right;
+      }
+    }
   }
 
   #home_flex {
@@ -52,7 +66,9 @@
       width: 20%;
       text-align: center;
       border-bottom: solid 10px transparent;
-
+      @include tablet{
+        width: 30%;
+      }
       .coin {
         margin: auto;
         height: 40%;

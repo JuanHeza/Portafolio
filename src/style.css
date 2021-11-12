@@ -86,6 +86,9 @@ a {
   .flex.ai-baseline {
     align-items: baseline; }
 
+.App {
+  overflow-x: hidden; }
+
 .badge {
   border-radius: 16px;
   border: #1a1a1a 2px solid;
@@ -434,6 +437,17 @@ a {
       display: flex;
       top: 50%;
       justify-content: space-around; }
+    @media (max-width: 920px) {
+      .home .home_head {
+        display: grid;
+        grid-template-areas: "hexagon" "left" "right";
+        grid-template-rows: 50% auto; }
+        .home .home_head #big {
+          grid-area: hexagon; }
+        .home .home_head .text_left {
+          grid-area: left; }
+        .home .home_head .text_right {
+          grid-area: right; } }
   .home #home_flex {
     display: flex;
     flex-wrap: wrap;
@@ -445,6 +459,9 @@ a {
       width: 20%;
       text-align: center;
       border-bottom: solid 10px transparent; }
+      @media (max-width: 920px) {
+        .home #home_flex .home_card {
+          width: 30%; } }
       .home #home_flex .home_card .coin {
         margin: auto;
         height: 40%; }
@@ -497,11 +514,19 @@ a {
       @media (prefers-color-scheme: dark) {
         .header .nav-bar .name {
           color: #1a1a1a; } }
+    @media (max-width: 920px) {
+      .header .nav-bar {
+        font-size: 12px; }
+        .header .nav-bar .name {
+          width: auto; } }
   .header .nav-bar-options ul {
     display: flex;
     gap: 5vw; }
     .header .nav-bar-options ul li {
       list-style: none; }
+    @media (max-width: 920px) {
+      .header .nav-bar-options ul {
+        gap: 1vw; } }
 
 .footer {
   height: 10vh;
@@ -558,6 +583,9 @@ a {
     .projectSection article .text.title {
       margin: 0;
       width: 240px; }
+  @media (max-width: 920px) {
+    .projectSection article {
+      height: auto; } }
 
 .blogSection article {
   width: 416px;
@@ -577,7 +605,7 @@ a {
     color: #1a1a1a;
     background-color: gray;
     height: 160px;
-    width: 384px;
+    width: 93%;
     margin: 16px; }
     @media (prefers-color-scheme: light) {
       .blogSection article .banner {
@@ -589,16 +617,23 @@ a {
       .blogSection article .banner {
         color: #e6e6e6; } }
   .blogSection article .info {
-    width: 416px;
+    width: 100%;
     height: 120px;
     padding: 8px; }
   .blogSection article .title {
-    width: 304px;
+    width: 73%;
     height: 24px;
     margin: 8px 0; }
+  @media (max-width: 920px) {
+    .blogSection article .title {
+      font-size: 0.8em; }
+    .blogSection article .date {
+      font-size: 0.7em; }
+    .blogSection article .body {
+      font-size: 0.8em; } }
   .blogSection article .date {
     color: #1a1a1a;
-    width: 96px;
+    width: 23%;
     height: 24px;
     margin: 8px 0;
     font-style: italic; }
@@ -608,7 +643,7 @@ a {
   .blogSection article .body {
     color: #1a1a1a;
     text-align: justify;
-    width: 384px;
+    width: 93%;
     height: 64px;
     margin: 0 8px; }
     @media (prefers-color-scheme: dark) {
@@ -619,6 +654,19 @@ a {
 
 .aboutSection {
   text-align: center; }
+  @media (max-width: 920px) {
+    .aboutSection .content {
+      width: 100%;
+      padding: 16px; }
+      .aboutSection .content .description {
+        height: auto;
+        margin: 16px;
+        padding: 16px; }
+      .aboutSection .content .links {
+        width: 256px;
+        height: 256px; }
+        .aboutSection .content .links .coin {
+          height: 208px; } }
   .aboutSection .description {
     text-align: justify;
     color: #1a1a1a;
@@ -692,6 +740,20 @@ a {
           margin-top: 80px;
           margin-left: -48px;
           margin-bottom: -16px; }
+  @media (max-width: 920px) {
+    .skillSection article {
+      width: 128px;
+      padding: 16px 8px; }
+      .skillSection article .title {
+        font-size: 0.8em; }
+      .skillSection article .skills {
+        width: 96px; }
+        .skillSection article .skills .coin {
+          height: 64px; }
+          .skillSection article .skills .coin:nth-child(2n) {
+            margin-top: 52px;
+            margin-left: -32px;
+            margin-bottom: -12px; } }
 
 #about {
   color: #1a1a1a; }

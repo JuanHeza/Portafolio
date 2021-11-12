@@ -20,6 +20,9 @@
         width: 240px;
       }
     }
+    @include tablet{
+      height: auto;
+    }
   }
 }
 
@@ -40,25 +43,36 @@
       }
       background-color: $default;
       height: 160px;
-      width: 384px;
+      width: 93%;
       margin: 16px;
     }
     .info {
-      width: 416px;
+      width: 100%;
       height: 120px;
       padding: 8px;
     }
     .title {
-      width: 304px;
+      width: 73%;
       height: 24px;
       margin: 8px 0;
     }
+      @include tablet{
+        .title{
+          font-size: 0.8em;
+        }
+        .date{
+          font-size: 0.7em;
+        }
+        .body{
+          font-size: 0.8em;
+        }
+      }
     .date {
       color: $dark-color;
       @media (prefers-color-scheme: dark) {
         color: $light-color;
       }
-      width: 96px;
+      width: 23%;
       height: 24px;
       margin: 8px 0;
       font-style: italic;
@@ -69,7 +83,7 @@
         color: $light-color;
       }
       text-align: justify;
-      width: 384px;
+      width: 93%;
       height: 64px;
       margin: 0 8px;
     }
@@ -81,6 +95,25 @@
 
 .aboutSection {
   text-align: center;
+
+  @include tablet {
+    .content {
+      width: 100%;
+      padding: 16px;
+      .description {
+        height: auto;
+        margin: 16px;
+        padding: 16px;
+      }
+      .links {
+        width: 256px;
+        height: 256px;
+        .coin {
+          height: 208px;
+        }
+      }
+    }
+  }
   .description {
     text-align: justify;
     color: $dark-color;
@@ -140,6 +173,26 @@
           margin-bottom: -16px;
         }
         height: 96px;
+      }
+    }
+  }
+  @include tablet {
+    article {
+      width: 128px;
+      padding: 16px 8px;
+      .title{
+        font-size: 0.8em;
+      }
+      .skills {
+        width: 96px;
+        .coin {
+          height: 64px;
+          &:nth-child(2n) {
+            margin-top: 52px;
+            margin-left: -32px;
+            margin-bottom: -12px;
+          }
+        }
       }
     }
   }

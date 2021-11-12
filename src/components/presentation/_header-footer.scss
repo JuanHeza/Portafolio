@@ -29,6 +29,12 @@
         color: $dark-color;
       }
     }
+  @include tablet{
+    font-size: 12px;
+    .name{
+      width: auto;
+    }
+  }
   }
 
   .nav-bar-options {
@@ -39,6 +45,9 @@
       li {
         list-style: none;
       }
+  @include tablet{
+    gap: 1vw;
+  }
     }
   }
 }

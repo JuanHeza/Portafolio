@@ -54,7 +54,9 @@ a {
     align-items: baseline;
   }
 }
-
+.App{
+  overflow-x: hidden;
+}
 .badge {
   border-radius: 16px;
   border: $dark-color 2px solid;
