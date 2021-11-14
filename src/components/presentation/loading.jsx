@@ -2,6 +2,7 @@
 import Honeycomb, {Hexagon} from "./hexagon"
 import React from 'react'
 import { Redirect } from 'react-router-dom';
+import "./loading.css"
 
 class Loading extends React.Component {
   constructor(props){
@@ -22,13 +23,13 @@ class Loading extends React.Component {
     return (
       <div class="loading">
         <Honeycomb data={{
-              h1:{front: "./icons/aarch64-original.svg"},
-              h2:{front: "./icons/aftereffects-original.svg"},
-              h3:{front: "./icons/amazonwebservices-original.svg"},
-              h4:{back: "./icons/android-original.svg"},
-              h5:{front: "./icons/angularjs-original.svg"},
-              h6:{front: "./icons/apache-original.svg"},
-              h7:{front: "./icons/appcelerator-original.svg"},
+              h1:{front: "./icons/apple.png"},
+              h2:{front: "./icons/HungryAjolote.png"},
+              h3:{front: "./icons/TCGame.png"},
+              h4:{back: "./icons/logo.png"},
+              h5:{front: "./icons/Coin.png"},
+              h6:{front: "./icons/Totodile.png"},
+              h7:{front: "./icons/icon.png"},
           }}/>
           {/* <img loading="lazy" src={logo} className="App-logo" alt="logo" /> */}
           <div className="lema">
