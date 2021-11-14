@@ -80,9 +80,9 @@
       height:20vh;
     }
     .lema .hexal{
-      width: 30vw;
+      width: 30vw !important;
       margin: 0;
-      height: 20vh;
+      height: 20vh !important;
     }
     .lema .text{
       width: 40vw;
