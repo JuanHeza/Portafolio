@@ -23,7 +23,7 @@ class Loading extends React.Component {
     return (
       <div class="loading">
         <Honeycomb data={{
-              h1:{front: "./icons/apple.png"},
+              h1:{front: "./icons/Apple.png"},
               h2:{front: "./icons/HungryAjolote.png"},
               h3:{front: "./icons/TCGame.png"},
               h4:{back: "./icons/logo.png"},
