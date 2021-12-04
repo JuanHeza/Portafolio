@@ -16,12 +16,13 @@
     &.backface {
       transform: rotateY(180deg);
     }
-    .hex {
-      fill: darken($default,10%);
-  }
-  .border {
-    fill: darken($default,30%);
-  }
+    @include repaintHex($default);
+  //   .hex {
+  //     fill: darken($default,10%);
+  // }
+  // .border {
+  //   fill: darken($default,30%);
+  // }
 
     image {
       position: absolute;

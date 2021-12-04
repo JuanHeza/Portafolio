@@ -25,10 +25,10 @@
 }
 @mixin repaintHex($color){
   .hex {
-      fill: lighten($color, 30%);
+    fill: lighten($color, 20%);
   }
   .border {
-    fill: $color;
+    fill: darken($color,10%);
   }
 }
 @mixin phone{

@@ -23,13 +23,13 @@ class Loading extends React.Component {
     return (
       <div class="loading">
         <Honeycomb data={{
-              h1:{front: "./icons/Apple.png"},
+              h1:{front: "./icons/artessali.png"},
               h2:{front: "./icons/HungryAjolote.png"},
               h3:{front: "./icons/TCGame.png"},
               h4:{back: "./icons/logo.png"},
-              h5:{front: "./icons/Coin.png"},
-              h6:{front: "./icons/Totodile.png"},
-              h7:{front: "./icons/icon.png"},
+              h5:{front: "./icons/isco.png"},
+              h6:{front: "./icons/Watt-A-Bot.png"},
+              h7:{front: "./icons/artemiss.png"},
           }}/>
           {/* <img loading="lazy" src={logo} className="App-logo" alt="logo" /> */}
           <div className="lema">

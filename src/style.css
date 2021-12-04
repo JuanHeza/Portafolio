@@ -199,9 +199,9 @@ a {
     .coin .face.backface {
       transform: rotateY(180deg); }
     .coin .face .hex {
-      fill: #666666; }
+      fill: #b3b3b3; }
     .coin .face .border {
-      fill: #333333; }
+      fill: #666666; }
     .coin .face image {
       position: absolute;
       top: 0;
@@ -215,9 +215,9 @@ a {
   .purple .coin {
     filter: drop-shadow(0 0 5px #1a1a1a); }
     .purple .coin .hex {
-      fill: #b9afe9; }
+      fill: #9688dd; }
     .purple .coin .border {
-      fill: #5038c7; }
+      fill: #402d9f; }
     @media (prefers-color-scheme: dark) {
       .purple .coin {
         animation: 4s shadow infinite; } }
@@ -233,9 +233,9 @@ a {
   .blue .coin {
     filter: drop-shadow(0 0 5px #1a1a1a); }
     .blue .coin .hex {
-      fill: #99c7ff; }
+      fill: #66abff; }
     .blue .coin .border {
-      fill: #0073ff; }
+      fill: #005ccc; }
     @media (prefers-color-scheme: dark) {
       .blue .coin {
         animation: 4s shadow infinite; } }
@@ -251,9 +251,9 @@ a {
   .green .coin, #about .coin {
     filter: drop-shadow(0 0 5px #1a1a1a); }
     .green .coin .hex, #about .coin .hex {
-      fill: #b4e9af; }
+      fill: #8fdd88; }
     .green .coin .border, #about .coin .border {
-      fill: #44c738; }
+      fill: #369f2d; }
     @media (prefers-color-scheme: dark) {
       .green .coin, #about .coin {
         animation: 4s shadow infinite; } }
@@ -269,9 +269,9 @@ a {
   .orange .coin {
     filter: drop-shadow(0 0 5px #1a1a1a); }
     .orange .coin .hex {
-      fill: #ff9999; }
+      fill: #ff6666; }
     .orange .coin .border {
-      fill: red; }
+      fill: #cc0000; }
     @media (prefers-color-scheme: dark) {
       .orange .coin {
         animation: 4s shadow infinite; } }
@@ -893,9 +893,9 @@ a {
 .list .skillRow {
   margin: 32px 8px 64px; }
   .list .skillRow .coin .hex {
-    fill: #ff9999; }
+    fill: #ff6666; }
   .list .skillRow .coin .border {
-    fill: red; }
+    fill: #cc0000; }
   .list .skillRow .skillProjects button, .list .skillRow .skillBlogs button {
     width: 5%;
     background: transparent;
@@ -918,9 +918,9 @@ a {
     .list .head {
       border-color: #e6e6e6; } }
   .list .head .coin .hex {
-    fill: #ff9999; }
+    fill: #ff6666; }
   .list .head .coin .border {
-    fill: red; }
+    fill: #cc0000; }
   .list .head .text {
     width: 90%; }
     .list .head .text .title {
