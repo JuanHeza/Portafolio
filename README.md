@@ -1,3 +1,4 @@
+[![wakatime](https://wakatime.com/badge/user/e779c06a-3302-444c-a0f6-d608f1ce11de/project/f5512d84-301c-4a78-b9eb-a3c2e13366a9.svg)](https://wakatime.com/badge/user/e779c06a-3302-444c-a0f6-d608f1ce11de/project/f5512d84-301c-4a78-b9eb-a3c2e13366a9)
 # Comands
 ## npm run deploy for deploy in githubpages
 # Getting Started with Create React App
